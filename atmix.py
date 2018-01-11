@@ -28,15 +28,15 @@ print("Locations can be ranked from 0 to 5 (with 5 being the largest).\n")
 
 
 
-rHome = float(input("How much time will you spend at Home today? [Enter 0 to 5]: "))
+#rHome = float(input("How much time will you spend at Home today? [Enter 0 to 5]: "))
 rPTransport = float(input("How much time will you spend on Transportation today? [Enter 0 to 5]: ")) 
 rOffice = float(input("How much time will you spend at an Office today? [Enter 0 to 5]: "))
 rGym = float(input("How much time will you spend at the Gym today? [Enter 0 to 5]: "))
 rSchool = float(input("How much time will you spend at School (or any other Educational Setting) today? [Enter 0 to 5]: "))
 
 
-Sum = rHome + rPTransport + rOffice + rGym + rSchool
-wHome = rHome/Sum
+Sum = rPTransport + rOffice + rGym + rSchool #+ rHome
+#wHome = rHome/Sum
 WPTransport = rPTransport/Sum
 wOffice = rOffice/Sum
 wGym = rGym/Sum
@@ -119,7 +119,7 @@ if token:
 
     	return Tlist
 
-    trackList += tracks(0,wHome)
+    #trackList += tracks(0,wHome)
     print("(Doing the dishes...)\n")
     trackList += tracks(1,WPTransport)
     print("(Stuck in trafic...)\n")
