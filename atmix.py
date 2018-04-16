@@ -34,7 +34,7 @@ rOffice = float(input("How much time will you spend at an Office today? [Enter 0
 rGym = float(input("How much time will you spend at the Gym today? [Enter 0 to 5]: "))
 rSchool = float(input("How much time will you spend at School (or any other Educational Setting) today? [Enter 0 to 5]: "))
 
-if (rPTransport == 0 && rOffice == 0 && rGym == 0 && rSchool == 0):
+if (rPTransport == 0 and rOffice == 0 and rGym == 0 and rSchool == 0):
     print("Bye bye!")
     sys.exit()
 
